@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C10B2902C7874E900CB7748 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B28F2C7874E900CB7748 /* AppDelegate.swift */; };
+		7C10B2922C7874E900CB7748 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2912C7874E900CB7748 /* SceneDelegate.swift */; };
+		7C10B2942C7874E900CB7748 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2932C7874E900CB7748 /* MainViewController.swift */; };
+		7C10B2992C7874EB00CB7748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C10B2982C7874EB00CB7748 /* Assets.xcassets */; };
+		7C10B29C2C7874EB00CB7748 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7C10B29B2C7874EB00CB7748 /* Base */; };
+		7C10B2A92C7C109600CB7748 /* PropertyClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2A82C7C109600CB7748 /* PropertyClosureViewController.swift */; };
+		7C10B2AF2C7C1ED100CB7748 /* ParameterClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2AE2C7C1ED100CB7748 /* ParameterClosureViewController.swift */; };
+		7C10B2B32C7C40E800CB7748 /* DispatchQueueClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2B22C7C40E700CB7748 /* DispatchQueueClosureViewController.swift */; };
+		7C10B2B52C7C45BE00CB7748 /* AdvancedLeakTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2B42C7C45BE00CB7748 /* AdvancedLeakTestViewController.swift */; };
+		7C10B2BA2C7C611D00CB7748 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C10B2B92C7C611D00CB7748 /* RxSwift */; };
+		7C10B2BC2C7C62D300CB7748 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2BB2C7C62D300CB7748 /* UIViewController+Extension.swift */; };
+		7C10B2BE2C7D89F900CB7748 /* ClosureLeakTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2BD2C7D89F900CB7748 /* ClosureLeakTestViewController.swift */; };
+		7C10B2C02C7D8DEC00CB7748 /* AsyncClosureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C10B2BF2C7D8DEC00CB7748 /* AsyncClosureViewController.swift */; };
+		7CD285652C7DA9ED00B7C3DD /* ClosureCaptureListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD285642C7DA9ED00B7C3DD /* ClosureCaptureListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C10B28C2C7874E900CB7748 /* TSClosureLeakTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TSClosureLeakTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C10B28F2C7874E900CB7748 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C10B2912C7874E900CB7748 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7C10B2932C7874E900CB7748 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7C10B2982C7874EB00CB7748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C10B29B2C7874EB00CB7748 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C10B29D2C7874EB00CB7748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C10B2A82C7C109600CB7748 /* PropertyClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyClosureViewController.swift; sourceTree = "<group>"; };
+		7C10B2AE2C7C1ED100CB7748 /* ParameterClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterClosureViewController.swift; sourceTree = "<group>"; };
+		7C10B2B22C7C40E700CB7748 /* DispatchQueueClosureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueueClosureViewController.swift; sourceTree = "<group>"; };
+		7C10B2B42C7C45BE00CB7748 /* AdvancedLeakTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedLeakTestViewController.swift; sourceTree = "<group>"; };
+		7C10B2BB2C7C62D300CB7748 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		7C10B2BD2C7D89F900CB7748 /* ClosureLeakTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureLeakTestViewController.swift; sourceTree = "<group>"; };
+		7C10B2BF2C7D8DEC00CB7748 /* AsyncClosureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncClosureViewController.swift; sourceTree = "<group>"; };
+		7CD285642C7DA9ED00B7C3DD /* ClosureCaptureListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureCaptureListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C10B2892C7874E900CB7748 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C10B2BA2C7C611D00CB7748 /* RxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C10B2832C7874E900CB7748 = {
+			isa = PBXGroup;
+			children = (
+				7C10B28E2C7874E900CB7748 /* TSClosureLeakTestSample */,
+				7C10B28D2C7874E900CB7748 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C10B28D2C7874E900CB7748 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C10B28C2C7874E900CB7748 /* TSClosureLeakTestSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C10B28E2C7874E900CB7748 /* TSClosureLeakTestSample */ = {
+			isa = PBXGroup;
+			children = (
+				7C10B28F2C7874E900CB7748 /* AppDelegate.swift */,
+				7C10B2912C7874E900CB7748 /* SceneDelegate.swift */,
+				7C10B2932C7874E900CB7748 /* MainViewController.swift */,
+				7CD285632C7DA9E100B7C3DD /* ClosureLearning */,
+				7C10B2C12C7D8F4800CB7748 /* ClosureUsageCases */,
+				7C10B2A52C7C002800CB7748 /* LeakScenarios */,
+				7C10B2C22C7D91D100CB7748 /* Utils */,
+				7C10B2A32C7875D200CB7748 /* Resources */,
+			);
+			path = TSClosureLeakTestSample;
+			sourceTree = "<group>";
+		};
+		7C10B2A32C7875D200CB7748 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C10B2982C7874EB00CB7748 /* Assets.xcassets */,
+				7C10B29A2C7874EB00CB7748 /* LaunchScreen.storyboard */,
+				7C10B29D2C7874EB00CB7748 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C10B2A52C7C002800CB7748 /* LeakScenarios */ = {
+			isa = PBXGroup;
+			children = (
+				7C10B2BD2C7D89F900CB7748 /* ClosureLeakTestViewController.swift */,
+				7C10B2B42C7C45BE00CB7748 /* AdvancedLeakTestViewController.swift */,
+			);
+			path = LeakScenarios;
+			sourceTree = "<group>";
+		};
+		7C10B2C12C7D8F4800CB7748 /* ClosureUsageCases */ = {
+			isa = PBXGroup;
+			children = (
+				7C10B2AE2C7C1ED100CB7748 /* ParameterClosureViewController.swift */,
+				7C10B2A82C7C109600CB7748 /* PropertyClosureViewController.swift */,
+				7C10B2B22C7C40E700CB7748 /* DispatchQueueClosureViewController.swift */,
+				7C10B2BF2C7D8DEC00CB7748 /* AsyncClosureViewController.swift */,
+			);
+			path = ClosureUsageCases;
+			sourceTree = "<group>";
+		};
+		7C10B2C22C7D91D100CB7748 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7C10B2BB2C7C62D300CB7748 /* UIViewController+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7CD285632C7DA9E100B7C3DD /* ClosureLearning */ = {
+			isa = PBXGroup;
+			children = (
+				7CD285642C7DA9ED00B7C3DD /* ClosureCaptureListViewController.swift */,
+			);
+			path = ClosureLearning;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C10B28B2C7874E900CB7748 /* TSClosureLeakTestSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C10B2A02C7874EB00CB7748 /* Build configuration list for PBXNativeTarget "TSClosureLeakTestSample" */;
+			buildPhases = (
+				7C10B2882C7874E900CB7748 /* Sources */,
+				7C10B2892C7874E900CB7748 /* Frameworks */,
+				7C10B28A2C7874E900CB7748 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TSClosureLeakTestSample;
+			packageProductDependencies = (
+				7C10B2B92C7C611D00CB7748 /* RxSwift */,
+			);
+			productName = TSWeakSelfExplorerSample;
+			productReference = 7C10B28C2C7874E900CB7748 /* TSClosureLeakTestSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C10B2842C7874E900CB7748 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "https://github.com/tsleedev/";
+				TargetAttributes = {
+					7C10B28B2C7874E900CB7748 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 7C10B2872C7874E900CB7748 /* Build configuration list for PBXProject "TSClosureLeakTestSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C10B2832C7874E900CB7748;
+			packageReferences = (
+				7C10B2B82C7C611D00CB7748 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 7C10B28D2C7874E900CB7748 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C10B28B2C7874E900CB7748 /* TSClosureLeakTestSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C10B28A2C7874E900CB7748 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C10B2992C7874EB00CB7748 /* Assets.xcassets in Resources */,
+				7C10B29C2C7874EB00CB7748 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C10B2882C7874E900CB7748 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C10B2C02C7D8DEC00CB7748 /* AsyncClosureViewController.swift in Sources */,
+				7C10B2942C7874E900CB7748 /* MainViewController.swift in Sources */,
+				7C10B2902C7874E900CB7748 /* AppDelegate.swift in Sources */,
+				7C10B2AF2C7C1ED100CB7748 /* ParameterClosureViewController.swift in Sources */,
+				7CD285652C7DA9ED00B7C3DD /* ClosureCaptureListViewController.swift in Sources */,
+				7C10B2A92C7C109600CB7748 /* PropertyClosureViewController.swift in Sources */,
+				7C10B2922C7874E900CB7748 /* SceneDelegate.swift in Sources */,
+				7C10B2B52C7C45BE00CB7748 /* AdvancedLeakTestViewController.swift in Sources */,
+				7C10B2BE2C7D89F900CB7748 /* ClosureLeakTestViewController.swift in Sources */,
+				7C10B2B32C7C40E800CB7748 /* DispatchQueueClosureViewController.swift in Sources */,
+				7C10B2BC2C7C62D300CB7748 /* UIViewController+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C10B29A2C7874EB00CB7748 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C10B29B2C7874EB00CB7748 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C10B29E2C7874EB00CB7748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C10B29F2C7874EB00CB7748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C10B2A12C7874EB00CB7748 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TSClosureLeakTestSample/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsleedev.TSClosureLeakTestSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C10B2A22C7874EB00CB7748 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TSClosureLeakTestSample/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tsleedev.TSClosureLeakTestSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C10B2872C7874E900CB7748 /* Build configuration list for PBXProject "TSClosureLeakTestSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C10B29E2C7874EB00CB7748 /* Debug */,
+				7C10B29F2C7874EB00CB7748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C10B2A02C7874EB00CB7748 /* Build configuration list for PBXNativeTarget "TSClosureLeakTestSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C10B2A12C7874EB00CB7748 /* Debug */,
+				7C10B2A22C7874EB00CB7748 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C10B2B82C7C611D00CB7748 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C10B2B92C7C611D00CB7748 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C10B2B82C7C611D00CB7748 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7C10B2842C7874E900CB7748 /* Project object */;
+}
