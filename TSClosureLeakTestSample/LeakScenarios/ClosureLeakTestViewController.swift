@@ -17,6 +17,7 @@ class ClosureLeakTestViewController: UIViewController {
         case notificationCenter = "NotificationCenter"
         case escaping = "Escaping Closure"
         case strongDataManagerCompletionHandler = "StrongDataManager Completion Handler"
+        case singletonDataManagerCompletionHandler = "SingleTonDataManager Completion Handler"
     }
     
     // MARK: - Properties
@@ -136,6 +137,23 @@ class ClosureLeakTestViewController: UIViewController {
         dismissAfterDelay()
     }
     
+    private func testSingleTonDataManagerCompletionHandler() {
+        print("Testing SingleTonDataManager Completion Handler")
+        // 메모리 누수 발생: 싱글톤이 self를 강하게 참고합니다.
+        // 해결 방법: [weak self]를 사용하고, 사용 후 completionHandler를 nil로 설정합니다.
+        let manager = SingleTonDataManager.shared
+        manager.setCompletionHandler {
+            self.performHeavyTask()
+        }
+        // 수정된 버전:
+        // manager.setCompletionHandler { [weak self] in
+        //     self?.performHeavyTask()
+        // }
+        manager.completionHandler?()
+        // manager.completionHandler = nil  // 사용 후 nil 설정
+        dismissAfterDelay()
+    }
+    
     private func performAsyncTask(completion: @escaping (String) -> Void) {
         DispatchQueue.global().async {
             Thread.sleep(forTimeInterval: 2)
@@ -202,6 +220,7 @@ extension ClosureLeakTestViewController: UITableViewDataSource, UITableViewDeleg
         case .notificationCenter: testNotificationCenter()
         case .escaping: testEscapingClosure()
         case .strongDataManagerCompletionHandler: testStrongDataManagerCompletionHandler()
+        case .singletonDataManagerCompletionHandler: testSingleTonDataManagerCompletionHandler()
         }
     }
 }
@@ -215,5 +234,15 @@ private class StrongDataManager {
     
     deinit {
         print("\(type(of: self)) \(#function)")
+    }
+}
+
+private class SingleTonDataManager {
+    static let shared = SingleTonDataManager()
+    
+    var completionHandler: (() -> Void)?
+    
+    func setCompletionHandler(completionHandler: @escaping () -> Void) {
+        self.completionHandler = completionHandler
     }
 }
